@@ -26,4 +26,12 @@ $(window).scroll(function () {
         'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
     });
 
+    if (wScroll > $('.portfolio').offset().top - 250) {
+        $('.portfolio .thumbnail').each(function (i) {
+            setTimeout(function () {
+                $('.portfolio .thumbnail').eq(i).addClass('show');
+            }, 300 * (i + 1));
+        });
+    }
+
 });
