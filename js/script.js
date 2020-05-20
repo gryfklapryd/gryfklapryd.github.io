@@ -11,6 +11,11 @@ $(".page-scroll").click(function (e) {
     e.preventDefault();
 });
 
+$(window).on('load', function () {
+    $('.pLeft').addClass('pShow');
+    $('.pRight').addClass('pShow');
+});
+
 $(window).scroll(function () {
     var wScroll = $(this).scrollTop();
 
