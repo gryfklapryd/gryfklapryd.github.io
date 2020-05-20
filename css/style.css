@@ -38,6 +38,21 @@ section {
     min-height: 600px;
 }
 
+.pLeft, .pRight {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pRight {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pLeft.pShow, .pRight.pShow {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
 .portfolio {
     background-color: #eee;
 }
