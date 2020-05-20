@@ -1,12 +1,12 @@
-$('.page-scroll').on('click', function (e) {
+$(".page-scroll").click(function (e) {
 
     var tujuan = $(this).attr('href');
 
     var elemenTujuan = $(tujuan);
 
-    $('body').animate({
-        scrollTop: elemenTujuan.offset().top
-    });
+    $('html, body').animate({
+        scrollTop: $(elemenTujuan).offset().top - 50
+    }, 2000, 'easeInOutExpo');
 
     e.preventDefault();
 });
