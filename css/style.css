@@ -85,3 +85,11 @@ footer p {
     color: #aaa;
     font-size: 1em;
 }
+
+div.still-counting h2 {
+    min-height: 300px;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 0;
+    font-family: "Sofia", sans-serif;
+}
