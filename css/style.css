@@ -92,4 +92,5 @@ div.still-counting h2 {
     padding-top: 150px;
     margin-top: 0;
     font-family: "Sofia", sans-serif;
+    opacity: 0;
 }

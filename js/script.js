@@ -37,6 +37,11 @@ $(window).scroll(function () {
                 $('.portfolio .thumbnail').eq(i).addClass('show');
             }, 300 * (i + 1));
         });
-    }
 
+        $('.still-counting h2').each(function (i) {
+            setTimeout(function() {
+                $('.still-counting h2').eq(i).animate({left:200, opacity:1}, 9000);
+            }, 300 * (i + 1));
+        });
+    }
 });
